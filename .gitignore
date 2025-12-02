@@ -55,7 +55,7 @@ dkms.conf
 *.dwo
 
 # vscode
-vscode/
+.vscode/
 
 # text files
 *.txt

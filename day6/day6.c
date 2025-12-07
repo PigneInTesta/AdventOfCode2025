@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
-
+// #include <time.h>
 
 typedef struct {
     unsigned int *numbers;
@@ -163,6 +163,11 @@ unsigned int rotated_solve_problems(FILE *input, Problem **problems_ptr) {
 
 int main(void) {
 
+    // struct timespec start, end;
+    // double elapsed;
+
+    // clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+
     char filename[] = "input.txt";
     FILE *fp = fopen(filename, "r");
     if (fp == NULL) {
@@ -224,6 +229,12 @@ int main(void) {
         free(problems[i].numbers);
     }
     free(problems);
+
+    // clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+    // elapsed = (end.tv_sec - start.tv_sec);
+    // elapsed += (end.tv_nsec - start.tv_nsec) / 1000000000.0;
+
+    // printf("Elapsed time: %f seconds\n", elapsed);
 
     return 0;
 }

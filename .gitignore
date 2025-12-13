@@ -1,10 +1,10 @@
 # Custom
 
-day*[0-9]/*
-!day[0-9]/*.c
-!day[0-9]/*.h
-day*[0-9]/.vscode/launch.json
-day*[0-9]/.vscode/tasks.json
+day*[0-9]*/*
+!day[0-9]*/*.c
+!day[0-9]*/*.h
+day*[0-9]*/.vscode/launch.json
+day*[0-9]*/.vscode/tasks.json
 
 # C Language
 
